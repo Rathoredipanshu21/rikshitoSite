@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      background-image: url(/bc.jpg);
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+
+    }
+    .container {
+      /* background-color: rgb(110, 104, 223); */
+      background-image: -moz-linear-gradient(pink, green);
+      columns: white;
+      padding: 5px;
+      /* border: 5px solid yellow; */
+    }
+
+    .container h1,
+    p {
+      /* align-items: ce; */
+      text-align: center;
+      margin: 20px;
+
+    }
+
+    input,
+    textarea {
+      width: 40%;
+      /* border-radius: 2px solid yellow; */
+      text-align: center;
+      /* justify-content: center; */
+      margin: 11px;
+      padding: 8px;
+      font-size: 11px;
+      border: 3px solid pink;
+      border-radius: 12px;
+      outline: none;
+      display: block;
+      margin: 12px auto;
+    }
+
+    #nav {
+      background-color: #0a1627;
+      color: white;
+      display: inline;
+      
+      display: flex;
+      justify-content: space-between;
+    
+      align-items: center;
+      width: 100%;
+      margin: 0px;
+      padding: 0;
+      box-shadow: 5px 10px solid white;
+    }
+    #region{
+      display: flex;
+      text-align: center;
+      margin: 5px auto;
+      border: 3px solid pink;
+      border-radius: 12px;
+      width: 41%;
+    }
+    #first{
+      color:orangered;
+      font-size: xx-large;
+    }
+    #btn{
+      
+       background-color: rgb(7, 234, 53);
+       color:white;
+       border: 5px;
+       width: 20%;
+       border-radius: 25px;
+       padding: 15px;
+       display: flex;
+       margin: 5px auto;
+       justify-content: center;
+    }
+
+   
+  
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div id="nav">
+
+
+
+      <div>
+        <!-- <img src="/images/Mainlogo.png" alt="" width="150px"> -->
+        <img src="/templet.jpg" alt="" width="250px">
+      </div>
+      <div id="Name">
+        <!-- <h1>RIKSHITO</h1> -->
+      </div>
+      <div>
+        <div class="link">
+            <a href="/welcome">Home</a>
+            <a href="/aboutUS">About</a>
+            <a href="/booking">Booking</a>
+            <a href="/contact">Contact</a>
+            <a href="/logout">log out</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 style="color: rgb(108, 229, 77);"> Book a Ride </h1>
+    <h2 style="text-align: center; color: rgb(94, 236, 141);">Only for the Dhanbad's location</h2>
+    <!-- <p class="submitMsg">Thanks for submitting the form </p> -->
+    <form action="" method="post">
+      <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+      <input type="text" name="address" id="age" placeholder="Address " required>
+
+
+      <select name="region" id="region" required>
+        <option value="">Please Select your region</option>
+        <option value="Hirapur">Hirapur</option>
+        <option value="Sarai Dhela">Sarai Dhela</option>
+        <option value="Steel-Gate">Steel-Gate</option>
+        <option value="KoylaNagar">KoylaNagar</option>
+        <option value="Kusum-Vihar">Kusum-Vihar</option>
+        <option value="City-center">City-center</option>
+        <option value="Jay-Prakash Nagar">Jay-Prakash Nagar</option>
+        <option value="Hill colony">Hill colony</option>
+        <option value="Near Big Bazar Area">Near Big Bazar Area</option>
+        <option value="Housing colony">Housing colony</option>
+      </select>
+     
+     
+      <input type="email" name="email" id="email" placeholder="Enter your email" required>
+      <input type="phone" name="phone" id="phone" placeholder="Enter your phone" required>
+      <input type="phone" name="Aphone" id="phone" placeholder="Please enter alternate phone number" required>
+      <textarea name="des" id="" cols="30" rows="10"
+        placeholder="please tell us about a famous place near you" required></textarea>
+      <button type="submit" id="btn" >SUBMIT</button>
+      <!-- <button type="submit">reset</button> -->
+      <!-- <button type="reset">reset</button> -->
+      <p id="first" >please fill the all details for book a ride</p>
+    </form>
+  </div>
+
+</body>
+<script>
+  // document.getElementById('#select')
+</script>
+
+</html>

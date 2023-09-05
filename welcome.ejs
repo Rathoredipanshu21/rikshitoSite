@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+
+<!-- <link rel="stylesheet" href="style.css"> -->
+<style>
+    @import url('https://fonts.googleapis.com/css2? family=Acme&family=Anton&family=Courgette&family=Dancing+Script&family=Fascinate&family=Lobster&display=swap');
+body{
+    background-color:grey;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* border: 3px solid; */
+    align-items: center;
+     /* position: fixed; */
+    width: 100%; 
+
+}
+
+#home {
+    display: flex;
+    margin: 20px;
+    border-radius: 15px;
+    height: 300px;
+    justify-content: space-between;
+    /* background-color: #b2d7fb; */
+    background-image:-moz-linear-gradient(#f9f5f5,#b1dafe,#9acf40);
+}
+
+#home img {
+    height: 300px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+#home div:first-child {
+    padding: 20px;
+}
+
+.link {
+    /* float: right; */
+   
+    border: 4px solid blue;
+    padding: 5px;
+    border: 1px solid;
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+
+#Sbutton {
+    background-color: green;
+    /* background-image: -moz-linear-gradient(green); */
+    color: white;
+    width: 100px;
+    border-radius: 15px;
+    cursor: pointer;
+    flex-direction: column;
+
+}
+
+#headline {
+    /* background-color: black; */
+    color: red;
+    text-align: center;
+
+}
+
+.headline {
+    color: blue;
+    text-align: center;
+}
+
+#booking {
+    text-align: center;
+    /* text-decoration: dotted; */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+}
+
+input {
+    width: 80%;
+    text-align: center;
+    margin: 11px;
+    padding: 8px;
+    font-size: 11px;
+    /* border: 3px solid palegreen; */
+    border-style: inset;
+    border-radius: 12px;
+    outline: none;
+    display: block;
+    margin: 12px auto;
+    /* background-color: rgb(174, 113, 150); */
+    /* background-image: -moz-linear-gradient(yellow); */
+    /* font: 50px; */
+    font-size: large;
+    font-family: 'Acme', sans-serif;
+    /* background-color:black; */
+    background-image: -moz-linear-gradient(black, white);
+    color: white;
+}
+
+#button {
+    /* align-items: center; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.card {
+    background-color: grey;
+
+}
+
+#contact {
+    display: flex;
+    margin: 20px;
+    border-radius: 15px;
+    height: 300px;
+    justify-content: space-between;
+    /* background-color: #b2d7fb; */
+    background-image: -moz-linear-gradient(skyblue,white);
+}
+
+#contact img {
+    height: 300px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+#contact div:first-child {
+    padding: 20px;
+}
+
+#customer {
+    text-align: center;
+    /* background-image: -moz-linear-gradient(yellow,blue); */
+    /* background-color: black; */
+    color:whitesmoke;
+}
+
+.box2 {
+    list-style: none;
+    display: inline;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    margin: -1px;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: grey;
+
+
+}
+
+.box3 {
+    text-align: center;
+
+}
+
+.box4 {
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    margin: 14px;
+    padding: 40px;
+    background: black;
+    color: white;
+}
+
+.box5 {
+    list-style: none;
+    flex-direction: column;
+    float: right;
+    /* background-color: black; */
+}
+
+.box4 img {
+    border-radius: 32px;
+}
+
+#Name {
+    text-align: center;
+}
+
+#nav {
+    background-color: #0a1627;
+    color: white;
+    display: inline;
+    /* flex-direction: row; */
+    display: flex;
+    justify-content: space-between;
+    /* border: 3px solid; */
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0;
+
+}
+#footer{
+background-color: black;
+color: white;
+text-align: center;
+font-family: 'Acme', sans-serif;
+font-family: 'Anton', sans-serif;
+font-family: 'Courgette', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Fascinate', cursive;
+font-family: 'Lobster', cursive;
+
+}
+.army{
+text-align: center;
+/* background-color: #B0A99F; */
+/* background-image: -moz-element(orangered,green); */
+background-image:linear-gradient(to bottom right, #ec170d, #0fdb71);
+}
+
+.army img{
+border-top-right-radius: 30px;
+border-top-left-radius: 30px;
+border-bottom-left-radius: 30px;
+border-bottom-right-radius: 30px;
+}
+
+
+
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+  .greeting{
+    display: flex;
+    justify-content: center;
+    margin: 5px auto;
+    width: 100%;
+  }
+</style>
+</head>
+
+<body>
+    <!-- <button></button> -->
+   
+    <nav>
+        <div id="nav">
+
+            <div>
+                <!-- <img src="/images/Mainlogo.png" alt="" width="150px"> -->
+                <img src="/templet.jpg" alt="" width="250px">
+            </div>
+            <div id="Name">
+                <!-- <h1>RIKSHITO</h1> -->
+            </div>
+            <div>
+                <div class="link" >
+                    <!-- <button onclick="play()">Play Audio</button> -->
+                    <a href="/welcome" >Home</a>
+                    <a href="/about">About</a>
+                    <a href="/booking" >Booking</a>
+                    <a href="/contact" >Contact</a>
+                    <a href="/logout" >Log-out</a>
+                </div>
+            </div> 
+        </div>
+    </nav>
+    <button onclick="myFunction()">Dark Mode</button>
+
+    <section id="home">
+        <div>
+            <h1>DHANBAD'S EASIEST E-RIKSHAW SERVICE</h1>
+            <P>We providing door to door facilites with cheapest price we are here to help you . you will help me out
+                and then we will become family and work together .just a start up to help the emergency cases </P>
+            <!-- <h2 style="color:#e80986;">we are providing a free service to ARMY</h2> -->
+            <p> We providing a best Service in Your city and it will help you definetely </p>
+            <p>We Promise you to have a Safest and Easiest ride with Your Family </p>
+                 <button type="submit" id="Sbutton" onclick="Book()" >Book A rikshow</button>
+                    <button type="reset" id="Sbutton">Sign-up for driver</button>
+
+        </div>
+
+
+        <div>
+            <img src="/toto.jpg" alt="">
+        </div>
+
+
+    </section>
+    <div class="greeting">
+        <img src="/Namaste.jpg" alt="">
+    </div>
+
+
+    <section id="About">
+        <!-- <link rel="AboutUS" href="aboutUS.html"> -->
+
+        <div>
+            <!-- <h1 id="headline">WE CARE FOR YOU</h1> -->
+            <!-- <p class="headline">we ensure that every trip helps you to have the best and comfortable ride</p> -->
+        </div>
+    </section>
+
+
+    <!-- <section id="Booking">
+
+        <h1 style="text-align: center;">BOOK A RIKSHITO</h1>
+
+        <input type="text" name="Name" id="" placeholder="Name">
+        <input type="text" name="" id="" placeholder="contact">
+        <input type="text" name="Name" id="" placeholder="address">
+
+
+         <select name="Select your Area" id="">
+            <option value="Hirapur">hirapur</option>
+            <option value="Bank-more">Bank-more</option>
+            <option value="Sarai-dhela">Sarai-dhela</option>
+        </select> -->
+
+
+        <!-- <input type="text" name="Name" id="" placeholder="famous place near you">
+        <input type="text" name="Name" id="" placeholder="other ">
+        <button type="submit" id="button" style="float: right;">CONFIRM YOUR BOOKING</button>
+
+    </section> --> 
+  
+
+
+    <span>
+        <div class="container">
+            <!-- <h1>SAFETY</h1> -->
+            <!-- <img src="images/Safetyhand2.jpg" alt=""> -->
+            <p>We delivered a lot of person </p>
+            <p>We have more than thousand of happy customer</p>
+
+            <p>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Know More
+                </a>
+
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card ">
+                    your safety is our first priority we connect you with your family friends and many more in a
+                    shortest distance that will help your bonding strong you may visit your friends families place with
+                    in less than an hour . just click on the phone and open the door the captain will be in front of the
+                    door with vehicles be ready for your place and then book ride we will reach you within a minutes .
+                    Just fill the correct addresses and open the door . caption will call you for confirming the address
+                    then you can go with them safely . YOUR SAFITY IS OUR FIRST PRIORITY
+                </div>
+            </div>
+
+            <div>
+                <img src="/safetyHand.jpg" alt="">
+            </div>
+
+
+        </div>
+    </span>
+
+    <section id="contact">
+        <div>
+            <h1>KNOW US BETTER</h1>
+            <p>just book a ride we are providing first trip with 30% discount and share your experience </p>
+        </div>
+        <div>
+            <img src="/Tota3.png" alt="">
+
+
+
+        </div>
+    </section>
+
+
+    <section id="customer">
+        <div>
+            <h1>IMPACT</h1>
+            <p>We helps emergency cases person with cheap price
+                we don not charge any amount from the people who is belonging from the ARMY
+                Happy customer are those who support us and motivate us for doing such a great work and help for them .
+                We insteract person face to face and complete our destination within some minutes comfortablly </p>
+        </div>
+        <div class="box">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/HCusto.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/hcus3.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/hCus2.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <table>
+        <h1 style="text-align: center;">WHAT's IN IT</h1>
+        <div class="box2">
+            <li id="doorTo">
+                <img src="/doorTO.png" alt="" width="300px" style="border-radius: 25px;">
+                <p>Door To Door service</p>
+
+            </li>
+            <li>
+                <img src="/money.png" alt="" width="300px" style="border-radius: 25px;">
+                <p>Cheap price</p>
+            </li>
+            <li>
+                <img src="/tWp.png" alt="" width="300px" style="border-radius: 25px;">
+                <p>Quick Ride</p>
+            </li>
+        </div>
+    </table>
+
+    <main>
+        <div class="box3">
+            <h1>SHARE YOUR EXPERIENCE WITH US</h1>
+            <textarea name="Type something" id="" cols="40" rows="10"
+                placeholder="Please Share your experience with us which will helps us to impove ourself"
+                style="background-color: khaki;"></textarea>
+
+        </div>
+    </main>
+
+
+   
+
+    <!-- <div class="include_html/" ></div> -->
+    <!-- <div include="aboutUS.html" id="aboutUS_file"></div> -->
+      
+  <div class="army">
+    <h1 style="color: white;">We Respect INDIAN ARMY from bottom of HEART</h1>
+    <img src="/indianArmy.jpg" alt="" width="50%">
+    <h2>We are Providing a FREE services to Indian ARMY</h2>
+    <h2>We will never ask a single coin from the person who belongs to DEFENCE </h2>
+    <h2>They are working for us all the time and i just think of it i will help them indirectly </h2>
+  </div>
+
+  <section id="footer">
+    <div class="box4">
+
+        <li>Home</li>
+        <li>About us</li>
+        <li>customer care</li>
+
+        <!-- </div>
+  <div class="box5"> -->
+        <li>
+            <a href="">
+
+                <img src="/call.jpg" alt="" width="50px">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/r.a.t.h.o.r.e21/">
+                <img src="/insta-logo.jpg" alt="" width="50px">
+            </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/i/flow/single_sign_on">
+                <img src="/twitter.png" alt="" width="50px">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/dipanshu.rathore.589">
+                <img src="/Facebook_Logo.png" alt="" width="50px">
+            </a>
+        </li>
+        <li>
+            <a href="https://web.whatsapp.com/">
+                <img src="/whatsp.jpg" alt="" width="50px">
+            </a>
+        </li>
+
+    </div>
+
+
+</section>
+  
+
+    <footer id="footer">
+        <h3 >copyright &#169 2023 Technology Pvt. Ltd. all rights reserved</h3>
+      </footer>
+
+
+
+
+</body>
+<!-- <script src="index.js"></script> -->
+<script>
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+   
+</script>
+
+</html>
